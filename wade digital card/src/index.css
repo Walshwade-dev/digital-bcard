@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* #root {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  width: 19.813rem;
+  height: 45rem;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+  border-radius: 0.625rem;
+}
+
+
+body {
+  background-image:
+    linear-gradient(45deg, 
+    rgba(150, 150, 250, 0.392), 
+    rgba(0, 0, 0, .6)),
+    url('/bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  --text:#FFF;
+  --text-h6: #f5f5f5;
+  --bg-footer: #D5D4D8;
+  color-scheme: dark;
+
+}
+
+
+.dark {
+  color-scheme: dark;
+  --dark-text: #2B283A;
+  --text-h6: #4A4E74;
+  --bg-footer:#161619;
+}
+
+nav {
+  height: 19.5rem;
+}
+
+
+
+.nav--image {
+  width: 100%;
+  opacity: 1;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+main.dark{
+  margin-top: 0;
+  padding-top: 0;
+  background-color:#1a1b21cc;;
+  height: 24rem;
+}
+
+main {
+  background: #f5f5f5a1;
+  height: 24rem;
+}
+
+
+.contacts {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.contact,h3 {
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  color: var(--dark-text);
+}
+
+.title {
+  margin: 0;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 0.9rem;
+
+  color: #5d2a06;
+}
+
+
+.contact,h6 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+
+  color: var(--dark-text);
+}
+
+
+/* buttons*/
+
+.buttons{
+  display: grid;
+  grid-template: 1.5em 1.5em / 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  gap: 8px;
+  
+
+  width: 115px;
+  height: 34px;
+  background: #FFFFFF;
+
+  /*button text styling*/
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #374151;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: .01rem;
+
+}
+
+
+.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 34px;
+  background-color: #297FE5;
+  border:none;
+  border-radius: 6px;
+  gap: 8px;
+  padding: 9px 13px 9px 11px;
+
+  /* button text styling*/
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: .01rem;
+  
+}
+
+/* buttons end*/
+
+
+/* about section*/
+.about {
+  width: 247px;
+  height: 201px;
+  margin-left: 2.188rem;
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
+}
+
+.about--title {
+  width: 242.71px;
+  height: 21px;
+  left: 151px;
+  top: 528px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: .4rem;
+
+   color: var(--dark-text);
+}
+
+.about--text {
+  width: 16.6rem;
+  height: 4rem;
+  font-size: .8rem;
+  line-height: .9rem;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.about--interests {
+  width: 242.71px;
+  height: 21px;
+  left: 151px;
+  top: 528px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: .2rem;
+  margin-bottom: .4rem;
+
+   color: var(--dark-text);
+}
+
+.interest--text {
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: .9rem;
+  color: var(--dark-text);
+}
+
+/* about section end*/
+
+
+/* footer section start */
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 19.813rem;
+  height: 4em;
+  background: var(--bg-footer);
+
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+/* Twitter logo*/
+.twitter{
+  border-radius: 5rem;
+  will-change: filter;
+  transition: filter 300ms;
+  background-color: #00acee;
+}
+
+.twitter:hover {
+
+  filter: drop-shadow(0 0 .9em #00acee);
+}
+
+/* Facebook logo*/
+.facebook{
+  border-radius: 5rem;
+  will-change: filter;
+  transition: filter 300ms;
+  background-color: #3B5998;
+}
+
+.facebook:hover {
+
+  filter: drop-shadow(0 0 1em #86abfb);
+}
+
+/* Instagram logo */
+.instagram{
+  border-radius: 5rem;
+  will-change: filter;
+  transition: filter 300ms;
+  background-image: linear-gradient(135deg,#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45,#FCAF45);
+}
+
+.instagram:hover {
+
+  filter: drop-shadow(0 0 .9em #E1306C);
+}
+
+/* Github logo*/
+.github {
+  border-radius: 5rem;
+  will-change: filter;
+  transition: filter 300ms;
+  background-color: green;
+}
+
+.github:hover {
+
+  filter: drop-shadow(0 0 .7em #04ff08);
+}
+/*footer section end */
+/* dark mode activator*/
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler-slider{
+  position: absolute;
+  bottom: 43.7rem;
+  width: 25px;
+  height: 15px;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ffd28f;;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler-slider{
+  justify-content: flex-end;
+  background-color: #4848489e;
+}
+
+
+.toggler-slider-circle{
+  height:13px;
+  width: 13px;
+  background-color: rgba(255, 0, 0, 0.57);
+  border-radius: 50%;
+}
+
+nav.dark .toggler-slider-circle {
+  background-color: rgb(2, 101, 2);
+}
+
+/*dark mode activator end*/
+
+/* dark mode  */
+
+.dark h3 {
+  color: var(--text);
+}
+
+
+.dark .title {
+  color: greenyellow;
+}
+
+.dark h6 {
+  color: var(--text);
+}
+
+
+
+
+/* dark mode about section start*/
+
+.dark .about--title {
+   color: var(--text);
+}
+
+.dark .about--text {
+  font-weight: 200;
+  color: var(--text);
+}
+
+.dark .about--interests {
+   color: var(--text);
+}
+
+.dark .interest--text {
+  color: var(--text);
+}
+
+/* dark mode about section end*/
+
+
+
+.dark footer {
+  background: #161619;
+}
+
+
+/* dark mode end */
